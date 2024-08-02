@@ -1,0 +1,73 @@
+:root {
+    --primary: #bc7c4f;
+    --secondary: #e7b491;
+    --accent: #f0985b;
+}
+
+body {
+    background-color: mintcream;
+}
+
+header {
+    border: 2px solid black;
+    padding: 10px 50px;
+    
+    /* background-image: url("/../images/kitchen.webp");
+    background-position: right center;
+    background-repeat: no-repeat; */
+
+    background-image: linear-gradient(to right, var(--primary) , var(--secondary));
+}
+
+h1 {
+    margin: 10px 0px;
+    border: 2px solid black;
+}
+
+.ingredients-box {
+    border: 2px dashed var(--primary);
+    border-radius: 15px;
+    background-color: var(--secondary);
+    color: black;
+    padding: 10px;
+}
+
+.method-box {
+    border: 2px solid var(--primary);
+    border-radius: 15px;
+    background-color: var(--secondary);
+    color: black;
+    padding: 10px;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+    border: 2px solid black;
+    padding: 10px 20px;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-button:link, .nav-button:visited {
+    background-color: var(--secondary);
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-button:hover, .nav-button:active {
+    background-color: var(--accent);
+}
